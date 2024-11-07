@@ -3,13 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cart component</title>
+    <title>fylo landing page</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
 
-    
+    <header class="header">
+        <div class="container">
+            <section class="header__inner">
+                <div class="header__top">
+                    <a class="header__top-img" href="#">
+                        <img class="header__top-logo" src="./images/logo.svg" alt="logo">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Features</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Team</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Sign In</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <section class="header__intro">
+                    <div class="header__content">
+                        <h1 class="header__content-title common-title">All your files in one secure location, accessible anywhere.</h1>
+                        <p class="header__content-text common-text">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+                        <form class="header__form" action="#" method="get">
+                            <fieldset class="header__form-inner">
+                                <input class="header__form-input" type="email" name="email" placeholder="Enter your email…" required>
+                                <button class="header__form-btn btn-submit" type="submit">Get Started</button>
+                            </fieldset>
+                            <span class="header__form-message">Please check your email</span>
+                        </form>
+                    </div>
+                    <img class="header__intro-img" src="./images/illustration-1.svg" alt="illustration file storage">
+                </section>
+            </section>
+        </div>
+    </header>
 
 </body>
 </html>

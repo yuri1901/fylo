@@ -1,1 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+.nunito {
+    font-family: "Nunito", sans-serif;
+}
+.raleway {
+    font-family: "Raleway", sans-serif;
+}
+
+*, body {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+}
+
+/*  Styles for common classes  */
+
+.btn-submit {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    
+    width: 200px;
+    height: 45px;
+    background: #2f65f8;
+    box-shadow: 2px 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .5s ease;
+}
+.btn-submit:hover {
+    background-color: #6c9bff;
+}
+.common-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #07043b;
+}
+.common-text {
+  font-size: 17px;
+  line-height: 1.4;
+  letter-spacing: 0.53px;
+  color: #07043b;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Header */
+
+.header {
+    min-height: 100vh;
+    padding-top: 65px;
+}
+
+/* HEADER TOP */
+
+.header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__top-logo {
+    width: 166px;
+    height: 50px;
+}
+.header__nav-list {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 0 57px;
+}
+.header__nav-link {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: #07043b;
+}
+
+/* HEADER CONTENT */
+.header__intro {
+    margin-top: 86px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__content-title {
+    max-width: 630px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.header__content-text {
+    max-width: 580px;
+    margin-bottom: 25px;
+}
+.header__form-inner {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 16px;
+}
+.header__form-input {
+    border: 1px solid  #07043b;
+    border-radius: 3px;
+    padding: 12px 20px;
+    background-color: white;
+    width: 320px;
+    height: 45px;
+
+    font-size: 14px;
+    letter-spacing: 0.47px;
+    color: #07043b;
+}
+.header__form-input:-webkit-autofill {
+    background-color: red;
+    font-size: 14px;
+}
+.header__form-input::placeholder {
+    font-size: 14px;
+    letter-spacing: 0.47px;
+    color: #c2c2c2;
+}
+.header__form-message {
+    display: none;  
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    color: #ef4877;
+}
+.header__intro-img {
+    width: 640px;
+    height: 474px;
+}
