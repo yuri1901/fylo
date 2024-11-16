@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fylo landing page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -42,11 +43,129 @@
                             <span class="header__form-message">Please check your email</span>
                         </form>
                     </div>
-                    <img class="header__intro-img" src="./images/illustration-1.svg" alt="illustration file storage">
+                    <div class="header__content-img">
+                        <img class="header__intro-img" src="./images/illustration-1.svg" alt="illustration file storage">
+                    </div>
                 </section>
             </section>
         </div>
     </header>
 
+
+    <main class="main">
+        
+        <section class="productive">
+            <div class="container">
+                <div class="productive__inner">
+                    <article class="productive__item">
+                        <div class="productive__block">
+                            <h2 class="productive__block-title common-title">Stay productive, wherever you are</h2>
+                            <p class="productive__block-txt common-text">
+                                Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
+                            </p>
+                            <p class="productive__block-txt common-text">
+                                Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!
+                            </p>
+                            <a href="#" class="productive__block-link">See how Fylo works</a>
+                        </div>
+                        <figure class="productive__figure">
+                            <blockquote class="productive__quote">
+                                Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+                            </blockquote>
+                            <figcaption class="productive__author">
+                                <div class="productive__author-img" role="img" aria-label="avatar author">
+                                    <img src="./images/avatar-testimonial.jpg" alt="">
+                                </div>
+                                <div class="productive__author-inner">
+                                    <cite class="productive__author-name">Kyle Burton</cite>
+                                    <span class="productive__author-work">Founder &amp; CEO, Huddle</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <div class="productive__img" role="img" aria-label="illustration stay productive"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <!-- call to action -->
+            <div class="container">
+                <div class="cta__inner">
+                    <div class="cta__block">
+                        <h2 class="cta__block-title common-title">Get early access today</h2>
+                        <p class="cta__block-text common-text">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+                    </div>   
+                    <form class="cta__form" action="#" method="get">
+                        <fieldset class="cta__form-inner">
+                            <input class="cta__form-input" type="email" name="email" placeholder="johnappleseed#mail.com" required>
+                            <button class="cta__form-btn btn-submit" type="submit">Get Started</button>
+                        </fieldset>
+                        <span class="cta__form-message">Please check your email</span>
+                    </form>
+                </div>
+            </div> 
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo"></div>
+            <div class="footer__content">
+                <ul class="footer__contact">
+                    <li class="footer__contact-item">
+                        <a href="#tel:15431234567" class="footer__contact-link footer__contact-link--tel">Phone: +1-543-123-4567</a>
+                    </li>
+                    <li class="footer__contact-item">
+                        <a href="#mailto:example@fylo.com" class="footer__contact-link footer__contact-link--mailto">example@fylo.com</a>
+                    </li>
+                </ul>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link">About us</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link">jobs</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link">press</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link">blog</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link">contact us</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link">terms</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link">privacy</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="footer__social">
+                    <li class="footer__social-item">
+                        <a href="" class="footer__social-link">
+                            <svg fill="white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="15px" height="15px"><path d="M12,27V15H8v-4h4V8.852C12,4.785,13.981,3,17.361,3c1.619,0,2.475,0.12,2.88,0.175V7h-2.305C16.501,7,16,7.757,16,9.291V11 h4.205l-0.571,4H16v12H12z"/></svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="" class="footer__social-link">
+                            <svg fill="white" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z"/></svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="" class="footer__social-link">
+                            <svg fill="white"  xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"/><path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
