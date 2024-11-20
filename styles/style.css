@@ -1,13 +1,8 @@
-
-.nunito {
-    font-family: "Nunito", sans-serif;
-}
-.raleway {
-    font-family: "Raleway", sans-serif;
-}
-
 * {
     box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth
 }
 body {
     font-family: "Open Sans", sans-serif;
@@ -133,20 +128,21 @@ body {
     }
 }
 
-
-
-
 /* main */
-
 
 .productive {
     background: url(../images/bg-curve-desktop.svg) no-repeat;
     background-size: cover;
-    padding: 180px 110px;
+    background-position: center center;
+    padding: 180px 0 110px 0;
     .productive__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .productive__block {
+        margin-bottom: 45px;
+
     }
     .productive__block-title {
         padding-bottom: 40px;
@@ -156,29 +152,25 @@ body {
         padding-bottom: 16px;
     }
     .productive__block-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0 8px;
         font-size: 16px;
         color: #3da08f;
         position: relative;
-        padding-right: 20px;
         border-bottom: 1px solid #3da08f;
         line-height: 27px;
         transition: .5s ease;
-        margin-bottom: 45px;
     }
     .productive__block-link:hover {
         border-color: #71dfcc;
         color: #71dfcc;
     }
-        /* HOVER SVG  */
-    .productive__block-link::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translate(0%, -50%);
-        background: url(../images/icon-arrow.svg) no-repeat;
-        width: 15px;
-        height: 15px;
+    .productive__block-link svg use {
+        transition: .5s ease;
+    }
+    .productive__block-link:hover svg use{
+        fill: #71dfcc;
     }
     .productive__figure {
         display: inline-block;
@@ -232,10 +224,7 @@ body {
         letter-spacing: 0.4px;
         color: #07043b;
     }
-    .productive__img {
-        background: url(../images/illustration-2.svg) no-repeat;
-        background-size: cover;
-        background-position: center center;
+    .productive__img img {
         width: 540px;
         height: 410px;
     }
@@ -259,7 +248,7 @@ body {
     }
     .cta__block-title {
         color: #fff;
-        margin-bottom: 17px;
+        padding-bottom: 17px;
     }
     .cta__block-text {
         max-width: 533px;
@@ -301,7 +290,6 @@ body {
     .footer__logo {
         width: 135px;
         height: 40px;
-        background: url(../images/footer-logo.svg) no-repeat;
     }
     .footer__content {
         display: flex;
